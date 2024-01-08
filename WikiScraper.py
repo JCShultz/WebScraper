@@ -26,17 +26,8 @@ for row in row_values:
     if(element == ''):
       row.remove(element)
   print(row)
+
+  #creates .csv of information scrapped from Wiki
   df = pd.DataFrame(row_values)
   df.to_csv('Top 50 Largest Companies in the World by Revenue.csv', index=False, encoding='utf-8')
-  #df = pd.DataFrame(row_values, columns=['Rank', 'Name', 'Industry', 'Revenue', 'Profit', 'Employees', 'Headquarter[note 1]', 'State-owned', 'Ref.', ''])
 
-
-
-#print(row_values[0])
-#print(df)
-
-
-
-
-
-#print(column_titles)
